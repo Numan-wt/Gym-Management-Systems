@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>FitBharat – Smart Gym Management for India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">Fit<span>Bharat</span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#bmi">BMI Calc</a></li>
+      <li><a href="#quiz">Find Plan</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#booking">Book Trial</a></li>
+      <li><a href="#booking" class="nav-cta">Free Trial</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>🇮🇳 India's #1 Gym Platform
+      </div>
+      <h1>MANAGE<br>YOUR <span class="o">GYM</span><br><span class="g">SMARTER</span></h1>
+      <p class="hero-sub">Complete gym management built for India. Track members, collect UPI payments, mark attendance &amp; grow your gym — all in one place.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary">🚀 Start Free Trial</a>
+        <a href="#quiz" class="btn btn-outline">🎯 Find My Plan</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-val">5K<sup>+</sup></div><div class="stat-lbl">Gyms Onboarded</div></div>
+        <div><div class="stat-val">2.4L<sup>+</sup></div><div class="stat-lbl">Members Managed</div></div>
+        <div><div class="stat-val">28<sup>+</sup></div><div class="stat-lbl">States Covered</div></div>
+      </div>
+    </div>
+
+    <!-- HERO DASHBOARD VISUAL -->
+    <div class="hero-visual">
+      <div class="dash-card">
+        <div class="dash-top">
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+          <div class="dash-label">FitBharat Dashboard</div>
+          <div class="live-badge">
+            <span class="live-dot"></span>LIVE
+          </div>
+        </div>
+        <div class="mini-stats">
+          <div class="mst"><div class="mst-n">247</div><div class="mst-l">Active Members</div></div>
+          <div class="mst"><div class="mst-n">₹1.2L</div><div class="mst-l">This Month</div></div>
+          <div class="mst"><div class="mst-n">38</div><div class="mst-l">Today's Check-ins</div></div>
+        </div>
+        <div class="member-list">
+          <div class="mrow">
+            <div class="mav mav-orange">RK</div>
+            <div class="minfo"><div class="mn">Rahul Kumar</div><div class="mp">Gold Plan · 3 months left</div></div>
+            <span class="mbadge b-green">Active</span>
+          </div>
+          <div class="mrow">
+            <div class="mav mav-gold">PS</div>
+            <div class="minfo"><div class="mn">Priya Sharma</div><div class="mp">Silver Plan · Expires in 3 days</div></div>
+            <span class="mbadge b-orange">Renew</span>
+          </div>
+          <div class="mrow">
+            <div class="mav mav-green">AV</div>
+            <div class="minfo"><div class="mn">Arjun Verma</div><div class="mp">Platinum · 11 months left</div></div>
+            <span class="mbadge b-green">Active</span>
+          </div>
+        </div>
+        <div class="progress-section">
+          <div class="prog-row">
+            <div class="prog-label"><span>Monthly Revenue Goal</span><span>₹1.2L / ₹1.5L</span></div>
+            <div class="prog-track"><div class="prog-fill" style="--w:78%"></div></div>
+          </div>
+          <div class="prog-row">
+            <div class="prog-label"><span>Member Retention</span><span>91%</span></div>
+            <div class="prog-track"><div class="prog-fill prog-fill-green" style="--w:91%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <span class="trust-lbl">Trusted across</span>
+    <div class="trust-track">
+      <span class="trust-city">MUMBAI</span><span class="trust-city">DELHI</span>
+      <span class="trust-city">BENGALURU</span><span class="trust-city">HYDERABAD</span>
+      <span class="trust-city">PUNE</span><span class="trust-city">CHENNAI</span>
+      <span class="trust-city">AHMEDABAD</span><span class="trust-city">JAIPUR</span>
+      <span class="trust-city">KOLKATA</span><span class="trust-city">SURAT</span>
+      <span class="trust-city">NAGPUR</span><span class="trust-city">INDORE</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="trust-city">MUMBAI</span><span class="trust-city">DELHI</span>
+      <span class="trust-city">BENGALURU</span><span class="trust-city">HYDERABAD</span>
+      <span class="trust-city">PUNE</span><span class="trust-city">CHENNAI</span>
+      <span class="trust-city">AHMEDABAD</span><span class="trust-city">JAIPUR</span>
+      <span class="trust-city">KOLKATA</span><span class="trust-city">SURAT</span>
+      <span class="trust-city">NAGPUR</span><span class="trust-city">INDORE</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features" class="section reveal">
+    <div class="sec-label">Why FitBharat?</div>
+    <h2 class="sec-title">EVERYTHING YOUR GYM NEEDS</h2>
+    <p class="sec-sub">From member tracking to UPI payments — all in one platform built for Indian gym owners.</p>
+    <div class="features-grid">
+      <div class="feat-card"><div class="feat-icon">👤</div><div class="feat-name">Member Management</div><p class="feat-desc">Add, edit, track unlimited members with photos, health profiles, attendance history and auto-renewal WhatsApp alerts.</p></div>
+      <div class="feat-card"><div class="feat-icon">💳</div><div class="feat-name">UPI &amp; Cash Billing</div><p class="feat-desc">Accept UPI, cash, or EMI payments. Auto-generate GST invoices and send receipts via WhatsApp instantly.</p></div>
+      <div class="feat-card"><div class="feat-icon">📲</div><div class="feat-name">WhatsApp Reminders</div><p class="feat-desc">Auto-send fee reminders, birthday wishes, diet plans and batch schedules — all on WhatsApp, India's #1 platform.</p></div>
+      <div class="feat-card"><div class="feat-icon">🏋️</div><div class="feat-name">Workout &amp; Diet Plans</div><p class="feat-desc">Create personalised Indian diet and workout plans. Share with members directly from the app in seconds.</p></div>
+      <div class="feat-card"><div class="feat-icon">📊</div><div class="feat-name">Smart Analytics</div><p class="feat-desc">Daily attendance heatmaps, monthly revenue charts, member retention scores and peak hour reports in real-time.</p></div>
+      <div class="feat-card"><div class="feat-icon">🔐</div><div class="feat-name">Staff &amp; Role Control</div><p class="feat-desc">Add trainers, receptionists, managers with custom permissions. Everyone sees only what they need.</p></div>
+    </div>
+  </section>
+
+  <!-- BMI CALCULATOR -->
+  <section id="bmi" class="section alt reveal">
+    <div class="sec-label">Interactive Tool</div>
+    <h2 class="sec-title">CHECK YOUR BMI &amp; <span class="text-orange">FITNESS GOALS</span></h2>
+    <p class="sec-sub">Find out your Body Mass Index and get a personalised plan recommendation instantly.</p>
+    <div class="bmi-wrap">
+      <div class="bmi-form">
+        <h3>BMI Calculator</h3>
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="bmi-gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Age</label>
+          <div class="slider-wrap">
+            <input type="range" id="bmi-age" min="15" max="70" value="25" oninput="document.getElementById('age-val').textContent=this.value;calcBMI()">
+            <div class="slider-val" id="age-val">25</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Height (cm)</label>
+          <div class="slider-wrap">
+            <input type="range" id="bmi-height" min="140" max="210" value="170" oninput="document.getElementById('h-val').textContent=this.value;calcBMI()">
+            <div class="slider-val" id="h-val">170</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Weight (kg)</label>
+          <div class="slider-wrap">
+            <input type="range" id="bmi-weight" min="40" max="150" value="70" oninput="document.getElementById('w-val').textContent=this.value;calcBMI()">
+            <div class="slider-val" id="w-val">70</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Your Fitness Goal</label>
+          <select id="bmi-goal" onchange="calcBMI()">
+            <option value="loss">Lose Weight</option>
+            <option value="muscle">Build Muscle</option>
+            <option value="fit">Stay Fit &amp; Active</option>
+            <option value="stamina">Increase Stamina</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="calcBMI()">Calculate My BMI →</button>
+      </div>
+      <div class="bmi-result" id="bmi-result">
+        <div class="bmi-circle" id="bmi-circle">
+          <div class="bmi-num" id="bmi-num">24.2</div>
+          <div class="bmi-cat" id="bmi-cat">Normal</div>
+        </div>
+        <div class="bmi-gauge">
+          <div class="gauge-marker" id="gauge-marker" style="left:40%"></div>
+        </div>
+        <div class="bmi-gauge-labels">
+          <span>Underweight<br>&lt;18.5</span>
+          <span>Normal<br>18.5–24.9</span>
+          <span>Overweight<br>25–29.9</span>
+          <span>Obese<br>&gt;30</span>
+        </div>
+        <p class="bmi-advice" id="bmi-advice">Your BMI is in the healthy range. Focus on strength training to build lean muscle and improve your fitness level.</p>
+        <div class="bmi-plan-btn">
+          <a href="#quiz" class="btn btn-primary btn-sm">🎯 Get My Custom Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN QUIZ -->
+  <section id="quiz" class="section reveal">
+    <div class="sec-label">Smart Recommender</div>
+    <h2 class="sec-title">FIND YOUR <span class="text-orange">PERFECT PLAN</span></h2>
+    <p class="sec-sub">Answer 4 quick questions and we'll recommend the ideal membership plan for your goals.</p>
+    <div class="quiz-wrap">
+      <div class="quiz-card" id="quiz-card">
+        <div class="quiz-progress" id="quiz-progress"></div>
+        <div id="quiz-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section id="results" class="section alt reveal">
+    <div class="sec-label">Real Results</div>
+    <h2 class="sec-title">TRANSFORMATION <span class="text-orange">STORIES</span></h2>
+    <p class="sec-sub">Real members, real gyms, real results. See what FitBharat-powered gyms have achieved.</p>
+    <div class="ba-wrap">
+      <div class="ba-tabs">
+        <button class="ba-tab active" onclick="showBA('loss',this)">Weight Loss</button>
+        <button class="ba-tab" onclick="showBA('muscle',this)">Muscle Gain</button>
+        <button class="ba-tab" onclick="showBA('stamina',this)">Stamina</button>
+      </div>
+      <div class="ba-stories" id="ba-stories"></div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section reveal">
+    <div class="sec-label">Book a Session</div>
+    <h2 class="sec-title">TRY FOR <span class="text-orange">FREE</span></h2>
+    <p class="sec-sub">Book a free 30-minute demo session with our team. No commitment, no credit card.</p>
+    <div class="booking-wrap">
+      <div class="booking-form" id="booking-form-wrap">
+        <h3>Book Your Free Trial</h3>
+        <p>Choose a date and time that works for you</p>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="book-name" placeholder="Rahul Kumar">
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" id="book-phone" placeholder="+91 98765 43210">
+        </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" id="book-date" onchange="updateSlots()">
+        </div>
+        <div class="form-group">
+          <label>Pick a Time Slot</label>
+          <div class="time-grid" id="time-grid"></div>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="bookSession()">Confirm Booking →</button>
+        <div class="booking-success" id="booking-success">
+          <div class="tick">🎉</div>
+          <h3 class="success-title">Booking Confirmed!</h3>
+          <p class="success-sub">We'll send a WhatsApp confirmation to <span id="booked-phone" class="text-white fw-bold"></span></p>
+          <p class="success-sub">Session: <span id="booked-time" class="text-orange fw-bold"></span></p>
+          <a href="#" class="btn btn-outline mt-20" onclick="resetBooking()">Book Another →</a>
+        </div>
+      </div>
+      <div class="booking-side">
+        <div class="info-card">
+          <h4>What You'll Get</h4>
+          <ul class="info-list">
+            <li><span>✅</span>Live demo of all features</li>
+            <li><span>📊</span>Custom plan for your gym size</li>
+            <li><span>💬</span>Q&amp;A with a gym management expert</li>
+            <li><span>🎁</span>30 days free after demo</li>
+            <li><span>📲</span>WhatsApp setup assistance</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h4>Contact Us</h4>
+          <ul class="info-list">
+            <li><span>📞</span>+91 98765 43210</li>
+            <li><span>💬</span>WhatsApp: Chat with us now</li>
+            <li><span>📧</span>hello@fitbharat.in</li>
+            <li><span>⏰</span>Mon–Sat, 9 AM – 7 PM IST</li>
+          </ul>
+        </div>
+        <div class="info-card info-card-special">
+          <h4>Special Offer</h4>
+          <p class="offer-text">Book a demo this week and get <strong class="text-orange">3 months free</strong> on the Pro plan. Limited slots available!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section alt reveal">
+    <div class="sec-label">Real Reviews</div>
+    <h2 class="sec-title">GYM OWNERS LOVE <span class="text-orange">FITBHARAT</span></h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Pehle sab diary mein likhte the. Ab sab mobile pe hai. Fees collection, attendance — sab ek jagah. Bahut useful hai bhai!</p>
+        <div class="test-author">
+          <div class="test-av tav-orange">MS</div>
+          <div><div class="test-name">Manish Singh</div><div class="test-city">Iron Body Gym, Lucknow</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">The WhatsApp fee reminder is a game changer. My collection rate went from 70% to 95%. Members actually pay on time now!</p>
+        <div class="test-author">
+          <div class="test-av tav-gold">RP</div>
+          <div><div class="test-name">Rajesh Patil</div><div class="test-city">PowerZone Fitness, Pune</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Managing 3 branches was a nightmare before FitBharat. Now I see everything from one dashboard. Highly recommended!</p>
+        <div class="test-author">
+          <div class="test-av tav-green">SG</div>
+          <div><div class="test-name">Sunita Gupta</div><div class="test-city">FitLife Centres, Delhi NCR</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section reveal">
+    <div class="sec-label">Get Started</div>
+    <h2 class="sec-title cta-title">READY TO <span class="text-orange">GROW</span><br>YOUR GYM?</h2>
+    <p class="sec-sub cta-sub">Join 5,000+ gyms already using FitBharat. First 30 days completely free — no credit card needed.</p>
+    <div class="cta-btns">
+      <a href="#booking" class="btn btn-primary btn-lg">🚀 Start Free Trial</a>
+      <button class="btn btn-outline btn-lg" onclick="openChat()">💬 Chat With Us</button>
+    </div>
+    <p class="cta-note">No credit card · 30-day free trial · Cancel anytime · Hindi &amp; English support</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Fit<span>Bharat</span></a>
+        <p class="footer-tagline">India's leading gym management platform. Built by gym owners, for gym owners.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#quiz">Find My Plan</a></li>
+          <li><a href="#bmi">BMI Calculator</a></li>
+          <li><a href="#booking">Book Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">WhatsApp Support</a></li>
+          <li><a href="#">Video Tutorials</a></li>
+          <li><a href="#">Hindi Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 FitBharat. Made with 🇮🇳 in India.</div>
+      <div class="footer-langs">English · हिंदी · मराठी</div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT TRIGGER -->
+  <button id="chatbot-trigger" onclick="openChat()">
+    💬
+    <div class="chat-notif">1</div>
+  </button>
+
+  <!-- CHATBOT WINDOW -->
+  <div id="chatbot-window">
+    <div class="chat-header">
+      <div class="chat-av">🤖</div>
+      <div class="chat-info">
+        <div class="chat-name">FitBharat Assistant</div>
+        <div class="chat-status">
+          <span class="status-dot"></span>Online — replies in seconds
+        </div>
+      </div>
+      <button class="chat-close" onclick="closeChat()">✕</button>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-quick" id="chat-quick">
+      <button class="quick-btn" onclick="quickAsk('What plans do you offer?')">💳 Plans &amp; Pricing</button>
+      <button class="quick-btn" onclick="quickAsk('How does WhatsApp integration work?')">📲 WhatsApp</button>
+      <button class="quick-btn" onclick="quickAsk('How do I book a free trial?')">🎯 Free Trial</button>
+      <button class="quick-btn" onclick="quickAsk('Does it support UPI payments?')">💰 UPI Payments</button>
+    </div>
+    <div class="chat-input-row">
+      <input class="chat-input" id="chat-input" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/919209985689" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">📱</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
